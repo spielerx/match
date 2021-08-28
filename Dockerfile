@@ -1,7 +1,9 @@
 FROM python:3.6
 MAINTAINER Alex Kern <alex@distributedsystems.com>
 
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
+    apt-get install -y apt-utils && \
     apt-get install -y libopenblas-dev gfortran && \
     pip install numpy==1.12.1 && \
     pip install scipy==0.19.0 && \
