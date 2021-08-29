@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: match
-          image: dsys/match:latest
+          image: spielerua/match:latest
           ports:
             - containerPort: 80
           env:
