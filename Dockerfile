@@ -5,6 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y apt-utils && \
     apt-get install -y libopenblas-dev gfortran && \
+    pip install certifi && \
     pip install numpy==1.12.1 && \
     pip install scipy==0.19.0 && \
     pip install gunicorn==19.7.1 && \
