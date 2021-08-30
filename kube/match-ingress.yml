@@ -10,7 +10,10 @@ spec:
   rules:
     - http:
         paths:
-          - path: "/"
+          - path: /
+            pathType: Prefix
             backend:
-              serviceName: match-svc
-              servicePort: 80
+              service:
+                name: match-svc
+                port:
+                  number: 80
