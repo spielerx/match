@@ -1,11 +1,12 @@
 apiVersion: v1
-kind: ReplicationController
+kind: Deployment
 metadata:
-  name: match
+  name: match-server
 spec:
-  replicas: 1
+  replicas: 2
   selector:
-    app: match
+    matchLabels:
+      app: match
   template:
     metadata:
       labels:
