@@ -1,7 +1,7 @@
 version: "2"
 services:
   match:
-    image: dsys/match:latest
+    image: spielerua/changed:latest
     ports:
       - 127.0.0.1:8888:8888
     command:
