@@ -23,6 +23,7 @@ services:
       - elasticsearch
   elasticsearch:
     restart: always
+    cpus: 1
     image: docker.elastic.co/elasticsearch/elasticsearch:6.8.19
     ports:
       - 127.0.0.1:9200:9200
