@@ -2,6 +2,9 @@ version: "2.2"
 services:
   match:
     restart: always
+    cpus: 0.5
+    mem_limit: 500m
+    mem_reservation: 128M
     image: spielerua/changed:latest
     ports:
       - 127.0.0.1:8888:8888
